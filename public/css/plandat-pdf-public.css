@@ -1,0 +1,103 @@
+.page-template-page-template-login {
+  background-image: linear-gradient(123deg, #157aff 0%, #004eb6 73%);
+  color: #fff;
+}
+.page-template-page-template-login #main-header, .page-template-page-template-login .et-l--footer {
+  display: none;
+}
+.page-template-page-template-login .templ-form-login {
+  padding: 100px 16px;
+}
+.page-template-page-template-login .templ-form-login .container {
+  width: 100%;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form {
+  max-width: 600px;
+  margin: auto;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-big-logo {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 30px;
+}
+@media (max-width: 767.99px) {
+  .page-template-page-template-login .templ-form-login .plandat-content-form .plandat-big-logo {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-big-logo img {
+  max-width: 530px;
+  width: 100%;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login .__sub-text-login {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform p {
+  margin-bottom: 20px;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform input[type=text], .page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform input[type=password] {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform input[type=text]::placeholder, .page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform input[type=password]::placeholder {
+  color: #fff;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform .login-submit {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform .login-submit input[type=submit] {
+  border: none;
+  background: #ff6d20;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+@media (max-width: 767.99px) {
+  .page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform .login-submit input[type=submit] {
+    font-size: 18px;
+  }
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform .login-remember label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform .login-remember label input {
+  margin-right: 5px;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login .__bottom-text-form {
+  text-align: center;
+  font-size: 16px;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login .__bottom-text-form a {
+  color: #ff6d20;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=plandat-pdf-public.css.map */

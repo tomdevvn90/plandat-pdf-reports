@@ -1,0 +1,115 @@
+
+.page-template-page-template-login{
+
+  background-image: $bg_site;
+  color: #fff;
+
+  #main-header,.et-l--footer{
+    display: none;
+  }
+
+  .templ-form-login{
+
+    .container{
+      width: 100%;
+    }
+
+    padding: 100px 16px;
+
+    .plandat-content-form{
+
+        max-width: 600px;
+        margin: auto;
+
+        .plandat-big-logo{
+          text-align: center;
+          margin-bottom: 50px;
+          padding: 0 30px;
+
+          @media (max-width: $screen-mb){
+            margin-bottom: 20px;
+            padding: 0;
+          }
+
+          img{
+            max-width: 530px;
+            width: 100%;
+          }
+        }
+        .plandat-form-login{
+          h1{
+            font-size: 40px;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+          }
+          .__sub-text-login{
+            text-align: center;
+            margin-bottom: 30px;
+          }
+          #loginform{
+            label{
+              display: block;
+              margin-bottom: 10px;
+              font-size: 16px;
+              font-weight: 400;
+              letter-spacing: 1.5px;
+            }
+            p{
+              margin-bottom: 20px;
+            }
+            input[type="text"],input[type="password"]{
+              width: 100%;
+              background: transparent;
+              border: none;
+              border-bottom: 1px solid #fff;
+              color: #fff;
+              font-size: 14px;
+              padding: 5px 0;
+              &::placeholder {
+                color: #fff;
+              }
+            }
+            .login-submit{
+              text-align: center;
+              margin-bottom: 15px;
+              input[type="submit"]{
+                border: none;
+                background: #ff6d20;
+                color: #fff;
+                padding: 10px 30px;
+                border-radius: 50px;
+                font-weight: bold;
+                font-size: 20px;
+                cursor: pointer;
+                letter-spacing: 1.5px;
+                @media (max-width: $screen-mb){
+                  font-size: 18px;
+                }
+            }
+          }
+          .login-remember{
+            label{
+              font-size: 14px;
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+              input{
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+        .__bottom-text-form{
+          text-align: center;
+          font-size: 16px;
+            a{
+              color: #ff6d20;
+              text-decoration: underline;
+            }
+          }
+        }
+    }
+  }
+
+}
