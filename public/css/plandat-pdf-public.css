@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .page-template-page-template-login {
   background-image: linear-gradient(123deg, #157aff 0%, #004eb6 73%);
   color: #fff;
@@ -20,7 +21,7 @@
   margin-bottom: 50px;
   padding: 0 30px;
 }
-@media (max-width: 767.99px) {
+@media (max-width: 980.99px) {
   .page-template-page-template-login .templ-form-login .plandat-content-form .plandat-big-logo {
     margin-bottom: 20px;
     padding: 0;
@@ -39,6 +40,13 @@
 .page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login .__sub-text-login {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 18px;
+}
+.page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login .__error-login {
+  background: #fff;
+  color: #ff2828;
+  padding: 5px 20px;
+  margin-bottom: 10px;
 }
 .page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform label {
   display: block;
@@ -54,10 +62,12 @@
   width: 100%;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
   color: #fff;
   font-size: 14px;
   padding: 5px 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white !important;
 }
 .page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform input[type=text]::placeholder, .page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform input[type=password]::placeholder {
   color: #fff;
@@ -77,7 +87,7 @@
   cursor: pointer;
   letter-spacing: 1.5px;
 }
-@media (max-width: 767.99px) {
+@media (max-width: 980.99px) {
   .page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login #loginform .login-submit input[type=submit] {
     font-size: 18px;
   }
@@ -94,10 +104,1069 @@
 .page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login .__bottom-text-form {
   text-align: center;
   font-size: 16px;
+  margin-top: 20px;
 }
 .page-template-page-template-login .templ-form-login .plandat-content-form .plandat-form-login .__bottom-text-form a {
   color: #ff6d20;
   text-decoration: underline;
+}
+
+.page-template-page-template-signup {
+  background-image: linear-gradient(123deg, #157aff 0%, #004eb6 73%);
+  color: #fff;
+}
+.page-template-page-template-signup #main-header, .page-template-page-template-signup .et-l--footer {
+  display: none;
+}
+.page-template-page-template-signup .templ-form-signup {
+  padding: 100px 16px;
+}
+.page-template-page-template-signup .templ-form-signup .container {
+  width: 100%;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form {
+  max-width: 650px;
+  margin: auto;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-big-logo {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 30px;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-big-logo {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-big-logo img {
+  max-width: 530px;
+  width: 100%;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .__sub-text-signup {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .user-registration {
+  padding: 0;
+  border: none;
+  margin-bottom: 20px;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .__bottom-text-form {
+  text-align: center;
+  font-size: 16px;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .__bottom-text-form a {
+  color: #ff6d20;
+  text-decoration: underline;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item {
+  max-width: 250px;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item {
+    max-width: 100%;
+  }
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item label .required {
+  display: none;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item input[type=text], .page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item input[type=password], .page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item input[type=number], .page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item input[type=email] {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white !important;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item input[type=text]::placeholder, .page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item input[type=password]::placeholder, .page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item input[type=number]::placeholder, .page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item input[type=email]::placeholder {
+  color: #fff;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item .user-registration-error {
+  font-size: 14px;
+  letter-spacing: normal;
+  padding: 0;
+  background: transparent;
+  border: none;
+  margin: 0;
+  color: #ff2f2f;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item .user-registration-error::after, .page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-form-row .ur-field-item .user-registration-error::before {
+  display: none;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-button-container {
+  padding: 0;
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-button-container .ur-submit-button {
+  border: none;
+  background: #ff6d20;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-button-container .ur-submit-button[disabled] {
+  position: relative;
+  background: #797979;
+  pointer-events: none;
+}
+.page-template-page-template-signup .templ-form-signup .plandat-content-form .plandat-form-signup .ur-button-container .ur-submit-button[disabled] .ur-front-spinner {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: calc(50% - 8px);
+  margin-left: 0;
+}
+
+.plantdat-popup {
+  position: relative;
+  padding: 50px;
+  max-width: 900px;
+  margin: auto;
+  background: linear-gradient(123deg, #157aff 0%, #004eb6 73%);
+  text-align: center;
+}
+@media (max-width: 980.99px) {
+  .plantdat-popup {
+    padding: 50px 16px;
+  }
+}
+.plantdat-popup .mfp-close {
+  color: #fff !important;
+  font-size: 40px;
+}
+.plantdat-popup .text-share {
+  font-size: 22px;
+  line-height: 150%;
+  padding-bottom: 20px;
+}
+@media (max-width: 980.99px) {
+  .plantdat-popup .text-share {
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+.plantdat-popup .fields {
+  display: flex;
+  justify-content: center;
+}
+.plantdat-popup .fields input[name=email_user] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+}
+.plantdat-popup .fields button {
+  background: #ff6d20;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+.plantdat-popup .error-msg {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  line-height: normal;
+  padding: 5px;
+  color: #c5c5c5;
+}
+.plantdat-popup.ajax-loading:before {
+  content: "";
+  background-image: url("../images/ajax-loading.gif");
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: center;
+  background-size: 40px;
+  background-position: center;
+  background-color: #ffffff2b;
+}
+
+.nf-form-wrap .nf-response-msg {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin: 5% auto;
+}
+.nf-form-wrap .nf-form-layout {
+  max-width: 600px;
+  margin: 5% auto;
+}
+.nf-form-wrap .nf-form-layout .nf-before-form-content, .nf-form-wrap .nf-form-layout .nf-after-form-content {
+  display: none;
+}
+.nf-form-wrap .nf-form-layout .nf-form-content {
+  max-width: 100%;
+}
+.nf-form-wrap .nf-form-layout .nf-form-content .nf-error.field-wrap .nf-field-element:after {
+  display: none;
+}
+.nf-form-wrap .nf-form-layout .nf-form-content .nf-field .nf-field-label .ninja-forms-req-symbol {
+  display: none;
+}
+.nf-form-wrap .nf-form-layout .nf-form-content .nf-field .nf-field-element input[type=text], .nf-form-wrap .nf-form-layout .nf-form-content .nf-field .nf-field-element input[type=password] {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white !important;
+}
+.nf-form-wrap .nf-form-layout .nf-form-content .nf-field .nf-field-element input[type=text]::placeholder, .nf-form-wrap .nf-form-layout .nf-form-content .nf-field .nf-field-element input[type=password]::placeholder {
+  color: #fff;
+}
+.nf-form-wrap .nf-form-layout .nf-form-content .nf-field .nf-field-element input[type=submit] {
+  border: none;
+  background: #ff6d20;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+.page-template-page-template-report {
+  background: linear-gradient(123deg, #157aff 0%, #004eb6 73%);
+  color: #fff;
+  height: 100%;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report {
+    height: auto;
+  }
+}
+.page-template-page-template-report #page-container, .page-template-page-template-report .et-boc, .page-template-page-template-report #et-main-area, .page-template-page-template-report .templ-form-report {
+  height: 100%;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report #page-container, .page-template-page-template-report .et-boc, .page-template-page-template-report #et-main-area, .page-template-page-template-report .templ-form-report {
+    height: auto;
+  }
+}
+.page-template-page-template-report.admin-bar.et_fixed_nav #main-header {
+  position: relative;
+  top: inherit !important;
+}
+.page-template-page-template-report .et-l--footer {
+  display: none;
+}
+.page-template-page-template-report .templ-form-report .container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report .container {
+    height: auto;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm {
+  margin: 100px auto;
+  width: 100%;
+  padding: 50px 0;
+  position: relative;
+  /* Hide all steps by default: */
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm {
+    width: 80%;
+    margin: auto;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm .tab {
+  display: none;
+  margin: auto;
+  max-width: 650px;
+  /* Mark input boxes that gets an error on validation: */
+}
+.page-template-page-template-report .templ-form-report #regForm .tab.ajax-loading::before {
+  content: "";
+  background-image: url("../images/ajax-loading.gif");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+  background-color: #ffffff57;
+  opacity: 0.3;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: normal;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab p {
+  margin-bottom: 20px;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab p label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+  text-overflow: ellipsis;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab input::placeholder {
+  color: #fff;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab input.pd-controls {
+  background-image: url("../images/icon-search.png");
+  background-size: 22px;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  padding: 5px 5px 5px 30px;
+  background-position: 0 6px;
+  max-width: 600px;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab input.invalid {
+  border-color: #ff7d7d;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab #prevBtn {
+  background-color: #bbbbbb;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .project-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm .tab .project-options {
+    gap: 30px;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .project-options .item-project {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  border-radius: 50%;
+  background-position: center;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 1s ease-out;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm .tab .project-options .item-project {
+    width: 120px;
+    height: 120px;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .project-options .item-project input[type=radio] {
+  display: none;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .project-options .item-project label {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm .tab .project-options .item-project label {
+    font-size: 18px;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .project-options .item-project::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .project-options .item-project.active::before, .page-template-page-template-report .templ-form-report #regForm .tab .project-options .item-project:hover::before {
+  display: none;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .state-options .item-state:not(:last-child) {
+  margin-bottom: 20px;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .state-options .item-state input[type=radio] {
+  display: none;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .state-options .item-state label {
+  display: block;
+  line-height: normal;
+  padding: 10px 0 5px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.46);
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  position: relative;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .state-options .item-state label::after, .page-template-page-template-report .templ-form-report #regForm .tab .state-options .item-state label::before {
+  content: "";
+  width: 20px;
+  display: inline-block;
+  position: absolute;
+  height: 20px;
+  border: 1px solid #fff;
+  right: 0;
+  top: 8px;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .state-options .item-state label::before {
+  content: "";
+  font-family: dashicons;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: never;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  vertical-align: top;
+  text-align: center;
+  transition: color 0.1s ease-in;
+  display: inline-block;
+  position: absolute;
+  border: 1px solid #fff;
+  right: 0;
+  top: 8px;
+  z-index: 3;
+  background: #fff;
+  color: #000;
+  visibility: hidden;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .state-options .item-state input[type=radio]:checked + label:before {
+  visibility: visible;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .state-options .item-state.un-active label {
+  color: #b4b4b4;
+  border-color: #b4b4b4;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .state-options .item-state.un-active label::after {
+  border-color: #b4b4b4;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .pd-search-project .form-search {
+  text-align: center;
+  padding-bottom: 50px;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm .tab .pd-search-project .form-search {
+    padding-bottom: 30px;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .pd-search-project .result-search {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm .tab .pd-search-project .result-search {
+    display: block;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .pd-search-project .result-search .__infor-search {
+  width: 60%;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  padding: 50px;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm .tab .pd-search-project .result-search .__infor-search {
+    width: 100%;
+    padding: 30px;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .pd-search-project .result-search .__infor-search .add-1:not(:last-child) {
+  margin-bottom: 16px;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .pd-search-project .result-search .__infor-search .add-1 label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 14px;
+  letter-spacing: 0.8px;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .pd-search-project .result-search .__infor-search .add-1 input {
+  letter-spacing: 0.8px;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .pd-search-project .result-search .__map {
+  width: 40%;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm .tab .pd-search-project .result-search .__map {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .pd-search-project .result-search .__map img {
+  border-radius: 15px;
+  height: 100%;
+  object-fit: cover;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .txt-confirm {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  margin-top: 50px;
+  display: none;
+  max-width: 700px;
+  margin: 50px auto 0 auto;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm .tab .txt-confirm {
+    padding: 20px 0;
+    margin-top: 30px;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .txt-confirm span {
+  font-size: 18px;
+  text-decoration: underline;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .btn-confirm {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .btn-confirm .item-btn-confirm {
+  display: none;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .btn-confirm input[type=radio] {
+  display: none;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .btn-confirm label {
+  display: block;
+  line-height: normal;
+  padding: 10px 0 5px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  position: relative;
+  width: 70px;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .btn-confirm label::after, .page-template-page-template-report .templ-form-report #regForm .tab .btn-confirm label::before {
+  content: "";
+  width: 30px;
+  display: inline-block;
+  position: absolute;
+  height: 30px;
+  border: 1px solid #fff;
+  right: 0;
+  top: 4px;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .btn-confirm label::before {
+  content: "";
+  font-family: dashicons;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: never;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  vertical-align: top;
+  text-align: center;
+  transition: color 0.1s ease-in;
+  display: inline-block;
+  position: absolute;
+  border: 1px solid #fff;
+  right: 0;
+  top: 4px;
+  z-index: 3;
+  background: #fff;
+  color: #000;
+  visibility: hidden;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .btn-confirm label[for=pd_btn_confirm_2]::before {
+  content: "";
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .btn-confirm input[type=radio]:checked + label:before {
+  visibility: visible;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .content-report-preview {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .content-report-preview .load-data-content {
+  height: 400px;
+  overflow: hidden;
+  color: #000;
+  padding: 0;
+  font-weight: 600;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table {
+  width: 100%;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table td, .page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table th {
+  padding: 20px 0 5px;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table th {
+  font-size: 20px;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table th {
+    font-size: 16px;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table tbody td {
+  font-size: 18px;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table tbody td {
+    font-size: 14px;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table tbody td .cb-order-confirm input[type=checkbox] {
+  display: none;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table tbody td .cb-order-confirm label {
+  display: block;
+  line-height: normal;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  position: relative;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table tbody td .cb-order-confirm label::after, .page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table tbody td .cb-order-confirm label::before {
+  content: "";
+  width: 20px;
+  display: inline-block;
+  position: absolute;
+  height: 20px;
+  border: 1px solid #fff;
+  right: 0;
+  top: -15px;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table tbody td .cb-order-confirm label::before {
+  content: "";
+  font-family: dashicons;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: never;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  vertical-align: top;
+  text-align: center;
+  transition: color 0.1s ease-in;
+  display: inline-block;
+  position: absolute;
+  border: 1px solid #fff;
+  right: 0;
+  top: -15px;
+  z-index: 3;
+  background: #fff;
+  color: #000;
+  visibility: hidden;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table tbody td .cb-order-confirm input[type=checkbox]:checked + label:before {
+  visibility: visible;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table tbody td .total-cost .sale {
+  text-decoration: line-through;
+  font-weight: normal;
+  color: #ff6262;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab .order-confirmation .table-order table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+.page-template-page-template-report .templ-form-report #regForm .tab:nth-child(4), .page-template-page-template-report .templ-form-report #regForm .tab:nth-child(6) {
+  max-width: 100%;
+}
+.page-template-page-template-report .templ-form-report #regForm .pd-back-step {
+  position: absolute;
+  left: 0;
+  color: #fff;
+  margin-top: -15px;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm .pd-back-step {
+    margin-top: -40px;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm .pd-back-step span {
+  font-size: 40px;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm .pd-back-step span {
+    font-size: 25px;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm .form-actions {
+  margin-top: 30px;
+  text-align: center;
+  display: none;
+}
+.page-template-page-template-report .templ-form-report #regForm .form-actions .continue-btn.un-click {
+  background: #2d2d2d;
+  color: #9e9e9e;
+  pointer-events: none;
+}
+.page-template-page-template-report .templ-form-report #regForm button {
+  border: none;
+  background: #ff6d20;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-report .templ-form-report #regForm button {
+    font-size: 18px;
+  }
+}
+.page-template-page-template-report .templ-form-report #regForm button:hover {
+  opacity: 0.8;
+}
+
+.page-template-page-template-account {
+  background: linear-gradient(123deg, #157aff 0%, #004eb6 73%);
+  color: #fff;
+  height: 100%;
+}
+.page-template-page-template-account .et-l--footer {
+  display: none;
+}
+.page-template-page-template-account.admin-bar.et_fixed_nav #main-header {
+  position: relative;
+  top: inherit !important;
+}
+.page-template-page-template-account #et-main-area {
+  padding: 150px 0 50px;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-account #et-main-area {
+    padding: 50px 0;
+  }
+}
+.page-template-page-template-account .layout-main-account {
+  display: flex;
+  grid-gap: 50px;
+  max-width: 900px;
+  margin: auto;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-account .layout-main-account {
+    flex-wrap: wrap;
+  }
+}
+.page-template-page-template-account .layout-main-account > div {
+  width: 50%;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-account .layout-main-account > div {
+    width: 100%;
+  }
+}
+.page-template-page-template-account .layout-main-account .user-files {
+  padding: 20px 0;
+}
+.page-template-page-template-account .layout-main-account .user-files p {
+  margin-top: 15px;
+}
+.page-template-page-template-account .layout-main-account .user-files p button.btn-pd-report {
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.page-template-page-template-account .layout-main-account .user-files p button.btn-pd-report img {
+  width: 20px;
+}
+.page-template-page-template-account .layout-main-account .__map img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  min-height: 500px;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-account .layout-main-account .__info-accout {
+    width: 100%;
+  }
+  .page-template-page-template-account .layout-main-account .user-files {
+    padding: 30px 0;
+  }
+}
+.page-template-page-template-account .previous-searches, .page-template-page-template-account .btn-sign-out {
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+.page-template-page-template-account .btn-sign-out {
+  bottom: -100px;
+  top: inherit;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-account .btn-sign-out {
+    bottom: -30px;
+  }
+}
+.page-template-page-template-account .btn-share-users {
+  border-radius: 50px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+}
+.page-template-page-template-account .btn-share-users:hover {
+  opacity: 0.8;
+}
+.page-template-page-template-account .btn-share-users img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.page-template-page-template-pre-search {
+  background: linear-gradient(123deg, #157aff 0%, #004eb6 73%);
+  color: #fff;
+  height: 100%;
+}
+.page-template-page-template-pre-search .et-l--footer {
+  display: none;
+}
+.page-template-page-template-pre-search.admin-bar.et_fixed_nav #main-header {
+  position: relative;
+  top: inherit !important;
+}
+.page-template-page-template-pre-search #et-main-area {
+  padding: 150px 0 50px;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-pre-search #et-main-area {
+    padding: 50px 0;
+  }
+}
+.page-template-page-template-pre-search .layout-main-presearch {
+  display: flex;
+  grid-gap: 50px;
+  max-width: 700px;
+  margin: 50px auto;
+  align-items: start;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-pre-search .layout-main-presearch {
+    display: block;
+  }
+}
+.page-template-page-template-pre-search .layout-main-presearch > div {
+  width: 50%;
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-pre-search .layout-main-presearch > div {
+    width: 100%;
+  }
+}
+@media (max-width: 980.99px) {
+  .page-template-page-template-pre-search .layout-main-presearch .list-address-search {
+    padding-bottom: 20px;
+  }
+}
+.page-template-page-template-pre-search .layout-main-presearch .list-address-search p:not(:last-child) {
+  padding-bottom: 20px;
+}
+.page-template-page-template-pre-search .pd-back-step-acc span:before {
+  color: #fff;
+  font-size: 30px;
+}
+.page-template-page-template-pre-search .pre-logout {
+  text-align: right;
+}
+.page-template-page-template-pre-search .pd-back-step-acc {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.page-template-page-template-order-report {
+  background-image: linear-gradient(123deg, #157aff 0%, #004eb6 73%);
+  color: #fff;
+}
+.page-template-page-template-order-report .et-l--footer {
+  display: none;
+}
+.page-template-page-template-order-report .templ-form-order-report {
+  padding: 100px 16px;
+}
+.page-template-page-template-order-report .templ-form-order-report .container {
+  width: 100%;
+}
+
+.btn-pd-report {
+  background: #ff6d20;
+  width: 100%;
+  max-width: 400px;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-orange {
+  color: #ff6d20;
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.ur-message {
+  background: #fff;
+}
+
+.user-info label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.user-info input[type=text] {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+}
+.user-info input[type=text]::placeholder {
+  color: #fff;
+}
+
+body li.menu-item-previous-searches {
+  display: none !important;
+}
+body li.menu-item-previous-searches a {
+  color: #fff !important;
+  background: #ff6d20;
+  padding: 12px 20px !important;
+  border-radius: 20px;
+}
+@media (max-width: 980.99px) {
+  body li.menu-item-previous-searches a {
+    padding: 10px 20px !important;
+    line-height: normal;
+  }
+}
+body.logged-in li.menu-item-previous-searches {
+  display: inline-block !important;
+}
+
+#mobile_menu {
+  background: linear-gradient(123deg, #157aff 0%, #004eb6 73%);
+}
+
+.top-user-header {
+  display: inline-flex;
+  padding: 0 0 0 25px;
+  line-height: normal;
+  position: relative;
+  top: -7px;
+}
+.top-user-header a.login-user {
+  color: #fff;
+  line-height: 2em;
+}
+@media (max-width: 980.99px) {
+  .top-user-header {
+    top: 0;
+    padding: 0 10px;
+  }
+}
+.top-user-header img {
+  width: 30px;
+}
+
+.noClick {
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=plandat-pdf-public.css.map */

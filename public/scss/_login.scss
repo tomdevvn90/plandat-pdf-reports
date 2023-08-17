@@ -46,6 +46,13 @@
           .__sub-text-login{
             text-align: center;
             margin-bottom: 30px;
+            font-size: 18px;
+          }
+          .__error-login{
+            background: #fff;
+            color: #ff2828;
+            padding: 5px 20px;
+            margin-bottom: 10px;
           }
           #loginform{
             label{
@@ -62,10 +69,12 @@
               width: 100%;
               background: transparent;
               border: none;
-              border-bottom: 1px solid #fff;
+              border-bottom: 1px solid rgb(255 255 255 / 45%);
               color: #fff;
               font-size: 14px;
               padding: 5px 0;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: white !important;
               &::placeholder {
                 color: #fff;
               }
@@ -103,6 +112,7 @@
         .__bottom-text-form{
           text-align: center;
           font-size: 16px;
+          margin-top: 20px;
             a{
               color: #ff6d20;
               text-decoration: underline;

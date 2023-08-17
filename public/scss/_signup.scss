@@ -1,0 +1,148 @@
+
+.page-template-page-template-signup{
+
+  background-image: $bg_site;
+  color: #fff;
+
+  #main-header,.et-l--footer{
+    display: none;
+  }
+
+  .templ-form-signup{
+
+    .container{
+      width: 100%;
+    }
+
+    padding: 100px 16px;
+
+    .plandat-content-form{
+
+        max-width: 650px;
+        margin: auto;
+
+        .plandat-big-logo{
+          text-align: center;
+          margin-bottom: 50px;
+          padding: 0 30px;
+
+          @media (max-width: $screen-mb){
+            margin-bottom: 20px;
+            padding: 0;
+          }
+
+          img{
+            max-width: 530px;
+            width: 100%;
+          }
+        }
+        .plandat-form-signup{
+          h1{
+            font-size: 40px;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+          }
+          .__sub-text-signup{
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+          }
+
+          .user-registration{
+            padding: 0;
+            border: none;
+            margin-bottom: 20px;
+          }
+
+          .__bottom-text-form{
+          text-align: center;
+          font-size: 16px;
+            a{
+              color: #ff6d20;
+              text-decoration: underline;
+            }
+          }
+
+          .ur-form-row{
+            .ur-field-item{
+              max-width: 250px;
+
+              @media (max-width: $screen-mb){
+                max-width: 100%;
+              }
+
+              label{
+                display: block;
+                margin-bottom: 10px;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 1.5px;
+                .required{
+                  display: none;
+                }
+              }
+              input[type="text"],input[type="password"],input[type="number"],input[type="email"]{
+                width: 100%;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid rgb(255 255 255 / 45%);
+                color: #fff;
+                font-size: 14px;
+                padding: 5px 0;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: white !important;
+                &::placeholder {
+                  color: #fff;
+                }
+              }
+              .user-registration-error{
+                font-size: 14px;
+                letter-spacing: normal;
+                padding: 0;
+                background: transparent;
+                border: none;
+                margin: 0;
+                color: #ff2f2f;
+                &::after,&::before{
+                  display: none;
+                }
+              }
+            }
+          }
+
+          .ur-button-container {
+            padding: 0;
+            display: block;
+            text-align: center;
+            margin-top: 50px;
+            .ur-submit-button{
+              border: none;
+              background: #ff6d20;
+              color: #fff;
+              padding: 10px 30px;
+              border-radius: 50px;
+              font-weight: bold;
+              font-size: 20px;
+              cursor: pointer;
+              letter-spacing: 1.5px;
+              &[disabled]{
+                position: relative;
+                background: #797979;
+                pointer-events: none;
+                .ur-front-spinner{
+                  position: absolute;
+                  left: 50%;
+                  right: 0;
+                  top: calc(50% - 8px);
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+
+        }
+    }
+  }
+
+}

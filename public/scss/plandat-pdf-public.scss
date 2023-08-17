@@ -2,3 +2,107 @@
 //Import
 @import "_variable.scss";
 @import "_login.scss";
+@import "_signup.scss";
+@import "_popup.scss";
+@import "_form.scss";
+@import "_report.scss";
+@import "_account.scss";
+@import "_pre-search.scss";
+@import "_order-report.scss";
+
+
+
+.btn-pd-report{
+  background: #ff6d20;
+  width: 100%;
+  max-width: 400px;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-orange{
+  color: #ff6d20;
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.ur-message{
+  background: #fff;
+}
+
+
+.user-info{
+  label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  input[type="text"]{
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 0;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+}
+
+body{
+  li.menu-item-previous-searches{
+    display: none !important;
+    a{
+      color: #fff !important;
+      background: #ff6d20;
+      padding: 12px 20px !important;
+      border-radius: 20px;
+      @media (max-width: $screen-mb){
+        padding: 10px 20px !important;
+        line-height: normal;
+      }
+    }
+  }
+  &.logged-in{
+    li.menu-item-previous-searches{
+      display: inline-block !important;
+    }
+  }
+}
+
+#mobile_menu{
+  background: linear-gradient(123deg, rgb(21, 122, 255) 0%, rgb(0, 78, 182) 73%);
+}
+
+.top-user-header{
+  display: inline-flex;
+  padding: 0 0 0 25px;
+  line-height: normal;
+  position: relative;
+  top: -7px;
+  a.login-user{
+    color: #fff;
+    line-height: 2em;
+  }
+  @media (max-width: $screen-mb){
+    top: 0;
+    padding: 0 10px;
+  }
+  img{
+    width: 30px;
+  }
+}
+
+.noClick {
+   pointer-events: none;
+}

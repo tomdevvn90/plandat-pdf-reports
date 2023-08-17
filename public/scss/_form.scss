@@ -1,0 +1,64 @@
+.nf-form-wrap{
+
+  .nf-response-msg{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin: 5% auto;
+  }
+
+  .nf-form-layout{
+
+    max-width: 600px;
+    margin: 5% auto;
+
+    .nf-before-form-content,.nf-after-form-content{
+      display: none;
+    }
+
+    .nf-form-content {
+      max-width: 100%;
+      .nf-error.field-wrap .nf-field-element:after {
+          display: none;
+      }
+      .nf-field{
+
+          .nf-field-label{
+            .ninja-forms-req-symbol{
+              display: none;
+            }
+          }
+
+          .nf-field-element{
+            input[type="text"],input[type="password"]{
+              width: 100%;
+              background: transparent;
+              border: none;
+              border-bottom: 1px solid rgb(255 255 255 / 45%);
+              color: #fff;
+              font-size: 14px;
+              padding: 5px 0;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: white !important;
+              &::placeholder {
+                color: #fff;
+              }
+            }
+            input[type="submit"]{
+              border: none;
+              background: #ff6d20;
+              color: #fff;
+              padding: 10px 30px;
+              border-radius: 50px;
+              font-weight: bold;
+              font-size: 20px;
+              cursor: pointer;
+              letter-spacing: 1.5px;
+            }
+          }
+
+      }
+    }
+  }
+
+}

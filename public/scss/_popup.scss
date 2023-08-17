@@ -1,0 +1,90 @@
+.plantdat-popup{
+
+  position: relative;
+  padding: 50px;
+  max-width: 900px;
+  margin: auto;
+  background: linear-gradient(123deg, #157aff 0%, #004eb6 73%);
+  text-align: center;
+
+  @media (max-width: $screen-mb){
+    padding: 50px 16px;
+  }
+
+  .mfp-close{
+    color: #fff !important;
+    font-size: 40px;
+  }
+
+  .text-share{
+    font-size: 22px;
+    line-height: 150%;
+    padding-bottom: 20px;
+
+    @media (max-width: $screen-mb){
+      font-size: 20px;
+      line-height: 120%;
+    }
+
+  }
+
+  .fields{
+
+    display: flex;
+    justify-content: center;
+
+    input[name="email_user"]{
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    button{
+      background: #ff6d20;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+    }
+
+  }
+
+  .error-msg{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    line-height: normal;
+    padding: 5px;
+    color: #c5c5c5;
+  }
+
+  &.ajax-loading{
+
+    &:before{
+      content: '';
+      background-image: url('../images/ajax-loading.gif');
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      background-repeat: no-repeat;
+      background-size: 60px;
+      background-position: center;
+      background-size: 40px;
+      background-position: center;
+      background-color: #ffffff2b;
+    }
+
+  }
+
+}
