@@ -74,11 +74,11 @@ $phone   = get_user_meta($author_id,'user_registration_input_box_phone',true);
 
 <body>
 
-<div style="background-color:#157aff;text-align:center;"><img style="width:300px;" src="https://www.plandat.com.au/wp-content/uploads/2023/03/Untitled-design-2023-03-07T125648.334.png"></div>
+<div style="background-color:#157aff;text-align:center;"><img style="width:300px;" src="<?php echo PLANDAT_PDF_URL . 'public/images/logo-white.png' ?>"></div>
 
 <br>
-  <div style="float:right;">Created: <?php echo date("d.m.Y"); ?></div>
-  <b><u>INVOICE #<?php echo $report_id; ?></u></b><br>
+  <div style="float:right;">Created: <?php echo date("d/m/Y"); ?> <br> ABN: 85 619 394 204</div>
+  <b><u>TAX INVOICE #<?php echo $report_id; ?></u></b><br>
 <br>
 <h3>ORDER INFORMATION</h3>
 <b>Search Address:</b> <?php echo $address; ?><br>
@@ -103,7 +103,7 @@ $phone   = get_user_meta($author_id,'user_registration_input_box_phone',true);
                   ?>
                   <tr>
                     <td><?php echo $service['service_name'] ?></td>
-                    <td>$<?php echo number_format($service['service_price'],2,',',' ') ?></td>
+                    <td>$<?php echo number_format($service['service_price'],2,'.',' ') ?></td>
                   </tr>
                   <?php
                }
@@ -116,7 +116,7 @@ $phone   = get_user_meta($author_id,'user_registration_input_box_phone',true);
                Subtotal:
              </div>
              <div class="__value">
-               <?php echo '$'.number_format($total,2,',',' '); ?>
+               <?php echo '$'.number_format($total,2,'.',' '); ?>
              </div>
           </div>
           <div class="item-total">
@@ -124,10 +124,17 @@ $phone   = get_user_meta($author_id,'user_registration_input_box_phone',true);
                Discount (<?php echo $discount; ?>%):
              </div>
              <div class="__value">
-               <?php
-                $dis_price = ($total*$discount)/100;
-                ?>
-                <?php echo '$'.number_format($dis_price,2,',',' '); ?>
+               <?php $dis_price = ($total*$discount)/100; ?>
+                <?php echo '$'.number_format($dis_price,2,'.',' '); ?>
+             </div>
+          </div>
+					<div class="item-total">
+             <div class="__label">
+               Tax 10% (GST):
+             </div>
+             <div class="__value">
+               <?php $tax = ($total - $dis_price)/11; ?>
+                <?php echo '$'.number_format($tax,2,'.',' '); ?>
              </div>
           </div>
           <div class="item-total last-item">
@@ -135,7 +142,7 @@ $phone   = get_user_meta($author_id,'user_registration_input_box_phone',true);
                Total:
              </div>
              <div class="__value">
-               <?php echo '$'.number_format(($total - $dis_price),2,',',' '); ?>
+               <?php echo '$'.number_format(($total - $dis_price),2,'.',' '); ?>
              </div>
           </div>
         </div>

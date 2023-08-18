@@ -184,7 +184,7 @@ get_header();
                           ?>
                           <tr>
                             <td><?php echo $service['service_name'] ?></td>
-                            <td>$<?php echo number_format($service['service_price'],2,',',' ') ?></td>
+                            <td>$<?php echo number_format($service['service_price'],2,'.',' ') ?></td>
                             <td>
                               <div class="cb-order-confirm">
                                   <input type="checkbox" name="pd_order_confirm[]" data-price="<?php echo $service['service_price'] ?>" id="pd_order_confirm_<?php echo $key; ?>" value="<?php echo $service['service_name']; ?>">
